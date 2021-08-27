@@ -1,13 +1,11 @@
 import React from 'react';
 
-class Home extends React.Component{
-    render(){
-        return (
-            <div>
-                home<br/>
-            </div>
-        )
-    } 
-}
+const Home = () => {
+    return (
+        <div>
+            TOP<br/>    
+        </div>
+    );
+};
 
 export default Home;
