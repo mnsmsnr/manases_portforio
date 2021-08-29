@@ -4,8 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Header from './header';
-import Footer from './footer';
+import { Header } from './header';
+import { Footer } from './footer';
 
 ReactDOM.render(
   <BrowserRouter>
