@@ -1,10 +1,10 @@
 import React from 'react';
-import Pararax from './pararax';
+import { ParallaxSlide } from '../parallax/parallaxSlide';
 
 export const Product = () => {
     return (
         <div>
-            <Pararax/>
+            <ParallaxSlide/>
         </div>
     );
 };
