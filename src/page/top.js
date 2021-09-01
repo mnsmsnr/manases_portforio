@@ -1,7 +1,6 @@
 import React from "react";
 import { Spring, animated } from 'react-spring'
 import { makeStyles } from '@material-ui/core/styles';
-
 import Snow from '../snow/snow';
 import Image from '../snow/biei.jpg'
 
@@ -29,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-const Top = () => {
+export const Top = () => {
     const classes = useStyles();
     return (
         <div className={classes.top}>
@@ -73,5 +72,3 @@ const Top = () => {
         </div>
     );
 };
-
-export default Top;

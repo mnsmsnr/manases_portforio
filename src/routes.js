@@ -1,8 +1,8 @@
-import Top from './page/top';
-import About from './page/about';
-import Skill from './page/skill';
-import Product from './page/product';
-import Contact from './page/contact';
+import { Top } from './page/top';
+import { About } from './page/about';
+import { Skill } from './page/skill';
+import { Product } from './page/product';
+import { Contact } from './page/contact';
 
 export const Routes = [
   { path: '/', component: Top, exact : true },
