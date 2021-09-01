@@ -1,9 +1,10 @@
 import React from 'react';
+import Pararax from './pararax';
 
 export const Product = () => {
     return (
         <div>
-            product<br/>
+            <Pararax/>
         </div>
     );
 };
