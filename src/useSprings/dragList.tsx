@@ -53,7 +53,7 @@ function DraggableList({ items }: { items: string[] }) {
 
 export function DragList() {
   return (
-    <div className={styles.container}>
+    <div className={styles.DraggableListcontainer}>
       <DraggableList items={'a b c d e d f'.split(' ')} />
     </div>
   )
