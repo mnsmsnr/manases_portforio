@@ -1,6 +1,6 @@
 import React from 'react'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import styles from './styles.module.css'
+import styles from '../style/styles.module.css'
 
 export function ParallaxInnerScroll() {
   const alignCenter = { display: 'flex', alignItems: 'center' }

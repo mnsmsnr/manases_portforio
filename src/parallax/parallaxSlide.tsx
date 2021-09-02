@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
-import styles from './styles.module.css'
+import styles from '../style/styles.module.css'
 import { makeStyles } from '@material-ui/core/styles';
 
 interface PageProps {
