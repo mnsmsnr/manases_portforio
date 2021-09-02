@@ -1,5 +1,6 @@
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { makeStyles } from '@material-ui/core/styles';
+import { ParallaxInnerScroll } from '../parallax/parallaxInnerScroll';
 
 const useStyles = makeStyles((theme) => ({
     contentHeight: {
@@ -29,7 +30,8 @@ export const ParallaxScroll = () => {
                         alignItems: 'center',
                         color: 'white',
                         }}>
-                        <p>page2</p><br/>
+                        ここに挿入
+                        <ParallaxInnerScroll/>
                     </ParallaxLayer>
                 </Parallax>
             </>
