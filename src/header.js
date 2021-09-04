@@ -13,13 +13,25 @@ const useStyles = makeStyles((theme) => ({
     },
     appBar: {
         backgroundColor: 'rgba(255,255,255,0.5)',
-        boxShadow: 'none'
-      },
-    title: {
-      flexGrow: 1,
+        boxShadow: 'none',
     },
-    menu: {
+    toolbar: {
+        height: '10%',
+    },
+    title: {
+        height: '100%',
+        flexGrow: 1,
+    },
+    button: {
         paddingRight: 10,
+        height: '100%',
+        fontSize: '3vh',
+        fontFamily:'Chango',
+        fontWeight: 'bold',
+        '&:hover': {
+            backgroundColor: 'rgba(255,255,255,0.7)',
+            fontSize: '4vh',
+        }
     },
   }));
 
@@ -28,25 +40,15 @@ const useStyles = makeStyles((theme) => ({
         return (
             <div className={classes.root}>
                 <AppBar className={classes.appBar}>
-                    <Toolbar>
+                    <Toolbar className={classes.toolBar}>
                         <TypoGraphy variant="h6" className={classes.title}>
                             <Box textAlign="left" color='black'>Manase's Portforio</Box>
                         </TypoGraphy>
-                        <Button className={classes.menu}>
-                            <TypoGraphy variant="h6"component={Link} to="">TOP</TypoGraphy>
-                        </Button>
-                        <Button className={classes.menu}>
-                            <TypoGraphy variant="h6"component={Link} to="about">ABOUT</TypoGraphy>
-                        </Button>
-                        <Button className={classes.menu}>
-                            <TypoGraphy variant="h6"component={Link} to="skill">SKILL</TypoGraphy>
-                        </Button>
-                        <Button className={classes.menu}>
-                            <TypoGraphy variant="h6"component={Link} to="product">PRODUCT</TypoGraphy>
-                        </Button>
-                        <Button className={classes.menu}>
-                            <TypoGraphy variant="h6"component={Link} to="contact">CONTACT</TypoGraphy>
-                        </Button>
+                        <Button className={classes.button} component={Link} to="">TOP</Button>
+                        <Button className={classes.button} component={Link} to="about">ABOUT</Button>
+                        <Button className={classes.button} component={Link} to="skill">SKILL</Button>
+                        <Button className={classes.button} component={Link} to="product">PRODUCT</Button>
+                        <Button className={classes.button} component={Link} to="contact">CONTACT</Button>
                     </Toolbar>
                 </AppBar>
             </div>
