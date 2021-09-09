@@ -46,6 +46,6 @@ const Snow = styled.div<{left: number, delay: number}>`
   }
 `
 
-export default ({ left, delay }: Props) => (
+export const SnowAnimation =  ({ left, delay }: Props) => (
   <Snow left={left} delay={delay} />
 )

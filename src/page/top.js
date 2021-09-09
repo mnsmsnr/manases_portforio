@@ -1,7 +1,7 @@
 import React from "react";
 import { Spring, animated } from 'react-spring'
 import { makeStyles } from '@material-ui/core/styles';
-import Snow from '../snow/snow';
+import { SnowAnimation } from '../snow/snow';
 import Image from '../snow/biei.jpg'
 
 const useStyles = makeStyles((theme) => ({
@@ -34,7 +34,10 @@ export const Top = () => {
         <div className={classes.top}>
             <>
                 {[...Array(30)].map(index =>
-                    <Snow key={index} left={Math.floor(Math.random() * 90)} delay={Math.floor(Math.random() * 20)}/>
+                    <SnowAnimation 
+                    key={index} 
+                    left={Math.floor(Math.random() * 90)} 
+                    delay={Math.floor(Math.random() * 20)}/>
                 )}
             </>
             <div className={classes.title + " " + classes.name}>
