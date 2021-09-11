@@ -1,10 +1,12 @@
 import React from 'react';
-import { ParallaxScroll } from '../parallax/parallaxScroll';
+// import { ParallaxScroll } from '../parallax/parallaxScroll';
+import { CommingSoon }  from "../customHooks/commingSoon";
 
 export const About = () => {
     return (
         <div>
-            <ParallaxScroll />
+            {/* <ParallaxScroll /> */}
+            <CommingSoon message='COMMING SOON'/>
         </div>
     );
 };

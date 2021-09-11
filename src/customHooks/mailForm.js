@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import TextField from "@material-ui/core/TextField";
 import { Button } from "@material-ui/core";
+import SendIcon from '@material-ui/icons/Send';
 import emailjs from 'emailjs-com';
 import { makeStyles } from '@material-ui/core/styles';
+
 
 const useStyles = makeStyles((theme) => ({
   pageTitle: {
@@ -92,7 +94,7 @@ export function MailForm() {
             <br/>
           </div>
           <Button type="submit" disabled={!isValid || disabled} variant="contained" color="primary">
-            Submit
+            <SendIcon />Send
           </Button>
         </form>
       </div>
