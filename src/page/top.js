@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     job: {
         fontSize:'200%',
     },
-  }));
+}));
 
 export const Top = () => {
     const classes = useStyles();

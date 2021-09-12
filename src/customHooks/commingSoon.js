@@ -40,12 +40,15 @@ export const CommingSoon = (props) => {
                     {styles => (
                         <>
                             <animated.div style={styles}>{props.message}</animated.div>
-                            <a href = {props.url} rel="noreferrer" target="_blank">{props.linkMessage}</a>
-                            <a href = {props.GithubUrl} rel="noreferrer" target="_blank">{props.GithubLinkMessage}</a>
                         </>
                     )}
                 </Spring>
             </div>
+            <a href = {props.url} rel="noreferrer" target="_blank">{props.linkMessage}</a>
+            <a href = {props.GithubUrl} rel="noreferrer" target="_blank">{props.GithubLinkMessage}</a>
+            <br/>
+            <a href = {props.url2} rel="noreferrer" target="_blank">{props.linkMessage2}</a>
+            <a href = {props.GithubUrl2} rel="noreferrer" target="_blank">{props.GithubLinkMessage2}</a>
         </div>
     );
 };
