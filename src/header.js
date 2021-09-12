@@ -14,13 +14,12 @@ const useStyles = makeStyles((theme) => ({
     appBar: {
         backgroundColor: 'rgba(255,255,255,0.5)',
         boxShadow: 'none',
+        height:'9vh',
+        minHeight: '64px',
     },
-    toolbar: {
-        height: '10%',
-    },
-    title: {
+    toolBar: {
         height: '100%',
-        flexGrow: 1,
+        margin: 'auto',
     },
     button: {
         paddingRight: 10,
@@ -41,9 +40,9 @@ const useStyles = makeStyles((theme) => ({
             <div className={classes.root}>
                 <AppBar className={classes.appBar}>
                     <Toolbar className={classes.toolBar}>
-                        <TypoGraphy variant="h6" className={classes.title}>
+                        {/* <TypoGraphy variant="h6" className={classes.title}>
                             <Box textAlign="left" color='black'>Manase's Portforio</Box>
-                        </TypoGraphy>
+                        </TypoGraphy> */}
                         <Button className={classes.button} component={Link} to="">TOP</Button>
                         <Button className={classes.button} component={Link} to="about">ABOUT</Button>
                         <Button className={classes.button} component={Link} to="skill">SKILL</Button>

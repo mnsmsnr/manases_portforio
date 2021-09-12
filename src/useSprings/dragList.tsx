@@ -8,14 +8,14 @@ import styles from '../style/styles.module.css'
 const fn = (order: number[], active = false, originalIndex = 0, curIndex = 0, y = 0) => (index: number) =>
   active && index === originalIndex
     ? {
-        y: curIndex * 50 + y,
-        scale: 1.1,
+        y: curIndex * 100 + y,
+        scale: 1,
         zIndex: 1,
         shadow: 15,
         immediate: (key: string) => key === 'y' || key === 'zIndex',
       }
     : {
-        y: order.indexOf(index) * 50,
+        y: order.indexOf(index) * 100,
         scale: 1,
         zIndex: 0,
         shadow: 1,
@@ -51,10 +51,10 @@ function DraggableList({ items }: { items: string[] }) {
   )
 }
 
-export function DragList() {
+export function DragList(props:any) {
   return (
     <div className={styles.DraggableListcontainer}>
-      <DraggableList items={'a b c d e d f'.split(' ')} />
+      <DraggableList items={props.skillSet.split(' ')} />
     </div>
   )
 }
