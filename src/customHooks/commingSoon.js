@@ -2,7 +2,7 @@ import React from "react";
 import { Spring, animated } from 'react-spring'
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     top: {
         backgroundColor: `black`,
         backgroundSize:'cover',

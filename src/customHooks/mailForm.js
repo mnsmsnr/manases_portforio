@@ -6,15 +6,14 @@ import SendIcon from '@material-ui/icons/Send';
 import emailjs from 'emailjs-com';
 import { makeStyles } from '@material-ui/core/styles';
 
-
-const useStyles = makeStyles((theme) => ({
-  pageTitle: {
-      fontSize:'500%',
-      font:'bold',
-      fontFamily:'Allura',
-  },
+const useStyles = makeStyles(() => ({
   contactTextCenter: {
     textAlign: 'center',
+  },
+  pageTitle: {
+    fontSize:'500%',
+    font:'bold',
+    fontFamily:'Allura',
   },
   contactMessage: {
     fontSize:'200%',
@@ -29,6 +28,11 @@ const useStyles = makeStyles((theme) => ({
     fontFamily:'Nothing You Could Do',
     color: 'blue',
     backgroundColor:'rgba(0,0,255,0.5)',
+  },
+  emailToMe: {
+    fontFamily:'Chango',
+    fontStyle:'italic',
+    paddingTop:'10vh'
   },
 }));
 
@@ -96,6 +100,7 @@ export function MailForm() {
           <Button type="submit" disabled={!isValid || disabled} variant="contained" color="primary">
             <SendIcon />Send
           </Button>
+          <p className={classes.emailToMe}>or send an email directly: masanori.manase0127@gmail.com</p>
         </form>
       </div>
       <div>{errors.user_email?.message}</div>

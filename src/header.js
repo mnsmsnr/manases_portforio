@@ -5,7 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar'
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     root: {
       flexGrow: 1,
     },
@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
         margin: 'auto',
     },
     button: {
-        paddingRight: 50,
+        paddingRight: 30,
+        paddingLeft: 30,
         height: '100%',
         fontSize: '3vh',
         fontFamily:'Chango',
@@ -38,9 +39,6 @@ const useStyles = makeStyles((theme) => ({
             <div className={classes.root}>
                 <AppBar className={classes.appBar}>
                     <Toolbar className={classes.toolBar}>
-                        {/* <TypoGraphy variant="h6" className={classes.title}>
-                            <Box textAlign="left" color='black'>Manase's Portforio</Box>
-                        </TypoGraphy> */}
                         <Button className={classes.button} component={Link} to="">TOP</Button>
                         <Button className={classes.button} component={Link} to="about">ABOUT</Button>
                         <Button className={classes.button} component={Link} to="skill">SKILL</Button>

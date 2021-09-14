@@ -2,7 +2,7 @@ import React from 'react';
 import { DragList } from '../useSprings/dragList.tsx';
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     pageTitle: {
         fontSize:'500%',
         font:'bold',
@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
         height:'100%',
         float:'left',
         backgroundColor:'#f0f0f0',
+        paddingTop:'50px',
     },
     left:{
         paddingLeft: '20vw',

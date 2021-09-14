@@ -4,7 +4,7 @@ import { ParallaxInnerScroll } from '../parallax/parallaxInnerScroll';
 import { MindMap } from "../amCharts/mindMap";
 import { UseForceUpdate } from "../customHooks/useForceUpdate";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     contentHeight: {
         marginTop: '100vh',
     },

@@ -9,7 +9,7 @@ interface PageProps {
   onClick: () => void
 }
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   contentHeight: {
     marginBottom:'97vh',
   },

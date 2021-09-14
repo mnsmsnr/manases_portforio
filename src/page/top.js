@@ -4,13 +4,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import { SnowAnimation } from '../snow/snow';
 import Image from '../snow/biei.jpg'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     top: {
         backgroundImage: `url(${Image})`,
         backgroundSize:'cover',
-        display: 'grid',
-        width: '100vw',
+        backgroundPosition:'center',
         height:'100vh',
+        display: 'grid',
         position: 'relative',
         alignContent: 'center',
     },
@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
     name: {
         fontSize:'700%',
         fontFamily:'Allura',
+        textAlign:'center',
     },
     job: {
         fontSize:'200%',
