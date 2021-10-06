@@ -28,15 +28,12 @@ export const CommingSoon = (props) => {
         <div className={classes.top}>
             <div className={classes.title + " " + classes.name}>
                 <Spring
-                    from={{ opacity: 0, color: 'white' }}
-                    to={[
-                        { opacity: 0.1, color: 'white' },
-                        { opacity: 0.3, color: 'white' },
-                        { opacity: 0.5, color: 'white' },
-                        { opacity: 0.7, color: 'white' },
-                        { opacity: 0.9, color: 'white' },
-                        { opacity: 1.0, color: 'white' },
-                    ]}>
+                        loop={true}
+                        to={[
+                            { opacity: 1, color: 'white' },
+                            { opacity: 0, color: 'white' },
+                        ]}
+                        from={{ opacity: 0, color: 'white' }}>
                     {styles => (
                         <>
                             <animated.div style={styles}>{props.message}</animated.div>
@@ -44,11 +41,6 @@ export const CommingSoon = (props) => {
                     )}
                 </Spring>
             </div>
-            <a href = {props.url} rel="noreferrer" target="_blank">{props.linkMessage}</a>
-            <a href = {props.GithubUrl} rel="noreferrer" target="_blank">{props.GithubLinkMessage}</a>
-            <br/>
-            <a href = {props.url2} rel="noreferrer" target="_blank">{props.linkMessage2}</a>
-            <a href = {props.GithubUrl2} rel="noreferrer" target="_blank">{props.GithubLinkMessage2}</a>
         </div>
     );
 };

@@ -1,4 +1,4 @@
- /* parallaxScroll */
+ /* parallaxSlide */
 .footerMargin {
   height: 100vh;
 }
@@ -109,64 +109,122 @@
   color: rgba(0,0,0,0.3);
 }
 
-/* parallaxInnerScroll */
-.background {
-  background: linear-gradient(#6471e6, #91e5a3);
+/* parallaxSticky */
+
+.StickyBackground {
+  background:radial-gradient(#ffffff,#C0E0DE);
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
 }
 
 .scrollText {
-  font-size: 1.5rem;
+  justify-content: center;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
 }
 
 .card {
-  background: linear-gradient(#e66465, #e5de91);
+  background: radial-gradient(rgb(252, 252, 161),yellow);
+  height: 10vh;
+  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.25rem;
-  height: 10rem;
-  width: 25%;
+  font-size: 2vw;
   text-align: center;
+  white-space: pre-wrap;
   border-radius: 10px;
+  opacity: 0.7;
+  padding: 0 1vw 0 1vw;
 }
 
-.parallax {
-  margin-right: 15%;
+.imageContainer {
+  width: 70%;
+  height: 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
+  opacity: 0.5;
 }
 
-.sticky {
-  margin-left: 15%;
-  background-color: #ff6d6d;
+.year {
+  margin-left: 2vh;
+  width: 8%;
+}
+.historyMain {
+  margin-left: 16vw;
+  width: 30%;
+}
+.historySub {
+  margin-left: 53vw;
+  width: 40%;
+  height: 15vh;
+  font-size: 1vw;
+  display:flex;
+  flex-flow: column;
+}
+.opacity {
+  opacity: 0.5;
+}
+.lineThrough {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.bold {
+  font-weight: bold;
 }
 
+.red {
+  background: radial-gradient(rgb(254, 148, 148),rgb(255, 58, 58));
+}
 .blue {
-  background-color: #5b65ad;
-  color: white;
+  background: radial-gradient(rgb(145, 154, 252),rgb(44, 75, 250));
+}
+.green {
+  background: radial-gradient(rgb(149, 254, 165),rgb(62, 255, 62));
 }
 
-.purple {
-  background-color: #9d65d0;
+.image_hokkaido {
+  background-image:
+      url("../images/history/hokkaido.jpg");
 }
-  
-@media (max-width: 750px) {
-  .card {
-    width: 40%;
-  }
-
-  .parallax {
-    margin-right: 1.5rem;
-  }
-
-  .sticky {
-    margin-left: 1.5rem;
-  }
+.image_selfDefenceForces {
+  background-image:
+      url("../images/history/selfDefenceForces.jpg");
+}
+.image_entrepreneurshipFailure {
+  background-image:
+      url("../images/history/entrepreneurshipFailure.jpg");
+}
+.image_Communication {
+  background-image:
+      url("../images/history/Communication.jpg");
+}
+.image_overseas {
+  background-image:
+      url("../images/history/overseas.jpg");
+}
+.image_overseasFailure {
+  background-image:
+      url("../images/history/overseasFailure.jpg");
+}
+.image_programing {
+  background-image:
+      url("../images/history/programing.jpg");
+}
+.image_IT {
+  background-image:
+      url("../images/history/IT.jpg");
+}
+.image_next {
+  background-image:
+      url("../images/history/next.jpg");
 }
 
 /* DraggableList */
