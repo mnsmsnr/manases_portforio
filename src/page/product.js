@@ -1,8 +1,8 @@
 import React from 'react';
 import { ParallaxSlide } from '../parallax/parallaxSlide';
-import PJimage1 from '../images/railstutorial.png'
-import PJimage2 from '../images/the_workout.png'
-import PJimage3 from '../images/manases_portfolio.png'
+import PJimage1 from '../images/product/railstutorial.png'
+import PJimage2 from '../images/product/the_workout.png'
+import PJimage3 from '../images/product/manases_portfolio.png'
 
 export const Product = () => {
     const railsTutorial={PJName:'Rails Tutorial',
