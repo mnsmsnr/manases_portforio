@@ -56,7 +56,7 @@ const useStyles = makeStyles(() => ({
                                     <Menu {...bindMenu(popupState)} className={classes.menuBack}>
                                         <MenuItem onClick={popupState.close} 
                                                     className={classes.button}
-                                                    component={Link} to="mind">MIND</MenuItem>
+                                                    component={Link} to="aboutMe">ABOUT ME</MenuItem>
                                         <MenuItem onClick={popupState.close} 
                                                     className={classes.button}
                                                     component={Link} to="history">HISTORY</MenuItem>
