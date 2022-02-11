@@ -24,8 +24,7 @@ export const Product = () => {
                             'また、自身の経験から「中堅トレーニーの筋トレメニューマンネリ化を解消する」をテーマにしています。',
                 learn:'要件実現コストの見積感覚も、技術選定の指標もなく、全フェーズで多く苦戦しました。\n' +
                         '中でも強く覚えているのは、感覚で使用していたフロント周りの不具合対応や、' +
-                        'デプロイ時の環境差異で苦戦した経験から、基礎知識やDevOpsの重要性を強く感じました。\n' +
-                        '※本アプリケーションは最低限の実装を終えての仮リリース状態のため、仕様修正や環境移行、リファクタ等の作業を多数残しています。',      
+                        'デプロイ時の環境差異で苦戦した経験から、基礎知識やDevOpsの重要性を強く感じました。\n',      
                 skills:['Ruby','html','css','JavaScript','RubyonRails','materialize','mysql','jQuery','Nginx','Unicorn','AWS ec2','AWS vpc'],
                 github:'https://github.com/mnsmsnr/the_workout',
                 link:'http://18.180.225.220:3000/',
@@ -40,8 +39,7 @@ export const Product = () => {
                 learn:'フロントエンド、特にJavascriptに知見も経験も多くなかったため、ある程度基礎をインプットしてからの着手となりました。\n' +
                         '苦戦を予想していましたが、静的WEBサイトのためバックエンド処理はなく、' +
                         'Reactの直感的な扱いやすさと充実したライブラリのためか想定より順調に開発が進められました。\n' +
-                        '強いて苦戦した箇所が多いのはcssのレイアウト周りでこちらは今後の課題と考えています。\n' +
-                        '※現在開発中のため、一部画面が未実装となっています。',      
+                        '強いて苦戦した箇所が多いのはcssのレイアウト周りでこちらは今後の課題と考えています。\n',  
                 skills:['JavaScript','css','React.js','Material-UI','React-Spring','AWS S3','AWS CodePipeline'],
                 github:'https://github.com/mnsmsnr/manases_portforio',
                 link:'http://manases-portfolio-s3.s3-website-ap-northeast-1.amazonaws.com/',
