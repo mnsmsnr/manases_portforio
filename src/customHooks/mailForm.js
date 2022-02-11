@@ -27,7 +27,7 @@ const useStyles = makeStyles(() => ({
     font:'bold',
     fontFamily:'Nothing You Could Do',
     color: 'blue',
-    backgroundColor:'rgba(0,0,255,0.5)',
+    backgroundColor:'rgba(0,0,255,0.2)',
   },
   emailToMe: {
     fontFamily:'Chango',
