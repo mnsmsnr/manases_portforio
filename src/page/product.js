@@ -3,6 +3,7 @@ import { ParallaxSlide } from '../parallax/parallaxSlide';
 import PJimage1 from '../images/product/railstutorial.png'
 import PJimage2 from '../images/product/the_workout.png'
 import PJimage3 from '../images/product/manases_portfolio.png'
+import PJimage4 from '../images/product/manases_portfolio.png'
 
 export const Product = () => {
     const railsTutorial={PJName:'Rails Tutorial',
@@ -14,8 +15,7 @@ export const Product = () => {
                 skills:['Ruby','html','css','JavaScript','RubyonRails','CoffeeScript','jQuery','sqlite','bootstrap','heroku'],
                 github:'https://github.com/mnsmsnr/rails_tutorial',
                 link:'https://radiant-retreat-93865.herokuapp.com/',
-                account:'【動作確認用アカウント】\nexample@railstutorial.org\nfoobar',
-            }
+        account:'【動作確認用アカウント】\nexample@railstutorial.org\nfoobar',}
     const theWorkout={PJName:'THE WORKOUT',
                 img:PJimage2,
                 product:'RubyonRailsで開発を行った、筋トレメニューの検索アプリケーションです。\n' +
@@ -44,7 +44,21 @@ export const Product = () => {
                 github:'https://github.com/mnsmsnr/manases_portforio',
                 link:'http://manases-portfolio-s3.s3-website-ap-northeast-1.amazonaws.com/',
        }
-    let PJs = {PJ1:railsTutorial, PJ2:theWorkout,PJ3:manasesPortfolio}
+    const aice={
+        PJName:'aice',
+        img:PJimage4,
+        product:'',
+        development:'\n' +
+                '',
+        learn:'\n' +
+                '' +
+                '\n' +
+                '\n',  
+        skills:['JavaScript','css','React.js','Material-UI','React-Spring','AWS S3','AWS CodePipeline'],
+        github:'',
+        link:'',
+    }
+    let PJs = {PJ1:railsTutorial, PJ2:theWorkout, PJ3:manasesPortfolio, PJ4:aice}
     return (
         <div>
             <ParallaxSlide PJs = {PJs}/>

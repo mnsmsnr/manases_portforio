@@ -2,6 +2,7 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { makeStyles } from '@material-ui/core/styles';
 import styles from '../style/styles.module.css'
 import { Spring, animated } from 'react-spring'
+import { FaAngleDoubleDown } from "react-icons/fa"
 
 const useStyles = makeStyles(() => ({
     contentHeight: {
@@ -11,7 +12,6 @@ const useStyles = makeStyles(() => ({
 
 export const ParallaxSticky = () => {
     const alignCenter = { display: 'flex', alignItems: 'center' }
-    const width = { width: '70%' }
     const classes = useStyles();
     const year = {1:'1986~',
                 2:'1999~',
@@ -36,7 +36,7 @@ export const ParallaxSticky = () => {
                 11:'海外渡航断念',
                 12_13:'店頭販売業へ復職',
                 14:'SES企業へ転職',
-                16.5:'WEB制作会社へ転職しスキルアップ中！',
+                16.5:'WEB系受託開発企業へ転職',
             }
     const sub = {1:'大きな事件もなく幼少期を過ごす',
             2:'家庭の事情で大学は進学不可だったため、社会勉強と思い週6日ひたすらバイトに明け暮れる。',
@@ -75,11 +75,20 @@ export const ParallaxSticky = () => {
             15.81:'[Java][保守開発][レガシー環境]\n' +
                 '3拠点に渡るニアショア環境のPJで約6ヶ月の大型保守改修に携わる。' +
                 '技術的にはレガシーながら、人材確保と顧客関係性が安定した環境を経験する。',
+            16.5:'',
+            16.51:'\n' +
+                '',
+            16.7:'',
+            16.71:'\n' +
+                '',
+            16.9:'',
+            16.91:'\n' +
+                '' +
+                '',
         }
     const subEX = {1:'8歳で水田への落下と、9歳で車に正面から轢かれた以外は',
             3:'※身体検査時、体重が下限ギリギリだったため直前に水をガブ飲みしてクリア',
-            8_9:'FF14をプレイし趣味費を¥1,500/月程度に抑えて徹底貯金',
-            13:'ただしeclipse、てめーはダメだ',
+            8_9:'FF14に没頭して引きこもり徹底貯金',
             14:'転職活動は難航を覚悟していたが思いの外あっさりと決まる。',
             15.4:'開発中は余裕無く、技術の知識補完は後の自己学習。',
             15.6:'緊急事態宣言とほぼ同時に長期出張というカオス出向',
@@ -98,7 +107,9 @@ export const ParallaxSticky = () => {
                                 ]}
                                 from={{ opacity: 0, color: '#26FFE6' }}>
                             {styles => (
-                                <animated.div style={styles}>Please scroll down</animated.div>
+                                <animated.div style={styles}>
+                                    <FaAngleDoubleDown />
+                                </animated.div>
                             )}
                         </Spring>
                     </ParallaxLayer>
@@ -128,7 +139,7 @@ export const ParallaxSticky = () => {
                     <ParallaxLayer sticky={{ start: 14, end: 15.5 }} style={{ ...alignCenter, justifyContent: 'center' }}>
                         <div className={`${styles.card} ${styles.imageContainer} ${styles.image_IT}`}></div>
                     </ParallaxLayer>
-                    <ParallaxLayer sticky={{ start: 16.5, end: 16.5 }} style={{ ...alignCenter, justifyContent: 'center' }}>
+                    <ParallaxLayer sticky={{ start: 16.5, end: 17.5 }} style={{ ...alignCenter, justifyContent: 'center' }}>
                         <div className={`${styles.card} ${styles.imageContainer} ${styles.image_next}`}></div>
                     </ParallaxLayer>
 
@@ -169,7 +180,7 @@ export const ParallaxSticky = () => {
                             style={{ ...alignCenter, justifyContent: 'flex-start' }}>
                         <div className={`${styles.card} ${styles.year}`}>{year[14]}</div>
                     </ParallaxLayer>
-                    <ParallaxLayer sticky={{ start: 16.5, end: 16.5 }} 
+                    <ParallaxLayer sticky={{ start: 16.5, end: 17.5 }} 
                             style={{ ...alignCenter, justifyContent: 'flex-start' }}>
                         <div className={`${styles.card} ${styles.year}`}>{year[16.5]}</div>
                     </ParallaxLayer>
@@ -235,8 +246,8 @@ export const ParallaxSticky = () => {
                             {main[14]}
                         </div>
                     </ParallaxLayer>
-                    <ParallaxLayer sticky={{ start: 16.5, end: 16.5 }} style={{ ...alignCenter, justifyContent: 'flex-start' }}>
-                        <div style= {width} className={`${styles.card} ${styles.historyMain} ${styles.blue}`}>
+                    <ParallaxLayer sticky={{ start: 16.5, end: 17.5 }} style={{ ...alignCenter, justifyContent: 'flex-start' }}>
+                        <div className={`${styles.card} ${styles.historyMain} ${styles.blue}`}>
                             {main[16.5]}
                         </div>
                     </ParallaxLayer>
@@ -291,7 +302,7 @@ export const ParallaxSticky = () => {
                     </ParallaxLayer>
                     <ParallaxLayer sticky={{ start: 13, end: 13 }} style={{ ...alignCenter, justifyContent: 'flex-start' }}>
                         <div className={`${styles.card} ${styles.historySub} ${styles.blue}`}>
-                            {sub[13]}<span className={styles.lineThrough} >{subEX[13]}</span>
+                            {sub[13]}
                         </div>
                     </ParallaxLayer>
                     <ParallaxLayer sticky={{ start: 14, end: 14 }} style={{ ...alignCenter, justifyContent: 'flex-start' }}>
@@ -324,6 +335,21 @@ export const ParallaxSticky = () => {
                     <ParallaxLayer sticky={{ start: 15.8, end: 15.8 }} style={{ ...alignCenter, justifyContent: 'flex-start' }}>
                         <div className={`${styles.card} ${styles.historySub} ${styles.green}`}>
                             <span className={styles.bold} >{sub[15.8]}</span>{sub[15.81]}
+                        </div>
+                    </ParallaxLayer>
+                    <ParallaxLayer sticky={{ start: 16.5, end: 16.5 }} style={{ ...alignCenter, justifyContent: 'flex-start' }}>
+                        <div className={`${styles.card} ${styles.historySub} ${styles.green}`}>
+                            <span className={styles.bold} >{sub[16.5]}</span>{sub[16.51]}
+                        </div>
+                    </ParallaxLayer>
+                    <ParallaxLayer sticky={{ start: 16.7, end: 16.7 }} style={{ ...alignCenter, justifyContent: 'flex-start' }}>
+                        <div className={`${styles.card} ${styles.historySub} ${styles.green}`}>
+                            <span className={styles.bold} >{sub[16.7]}</span>{sub[16.71]}
+                        </div>
+                    </ParallaxLayer>
+                    <ParallaxLayer sticky={{ start: 16.9, end: 16.9 }} style={{ ...alignCenter, justifyContent: 'flex-start' }}>
+                        <div className={`${styles.card} ${styles.historySub} ${styles.green}`}>
+                            <span className={styles.bold} >{sub[16.9]}</span>{sub[16.91]}
                         </div>
                     </ParallaxLayer>
                 </Parallax>

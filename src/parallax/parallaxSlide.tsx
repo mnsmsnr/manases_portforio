@@ -55,10 +55,11 @@ export function ParallaxSlide(PJprops:any) {
     <>
       <div className={styles.headerMargin}></div>
       <>
-        <Parallax className={styles.container} ref={parallax} pages={3} horizontal>
+        <Parallax className={styles.container} ref={parallax} pages={4} horizontal>
           <Page offset={0} gradient="pink" onClick={() => scroll(1)} PJinfo = {PJprops.PJs.PJ1}/>
           <Page offset={1} gradient="teal" onClick={() => scroll(2)} PJinfo = {PJprops.PJs.PJ2}/>
-          <Page offset={2} gradient="tomato" onClick={() => scroll(0)} PJinfo = {PJprops.PJs.PJ3}/>
+          <Page offset={2} gradient="tomato" onClick={() => scroll(3)} PJinfo = {PJprops.PJs.PJ3}/>
+          <Page offset={3} gradient="pink" onClick={() => scroll(0)} PJinfo = {PJprops.PJs.PJ4}/>
         </Parallax>
       </>
       <div className={styles.footerMargin}></div>
