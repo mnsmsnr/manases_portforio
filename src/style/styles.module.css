@@ -84,6 +84,10 @@
   background: linear-gradient(to right, tomato 0%, gold 100%);
 }
 
+.blue {
+  background: linear-gradient(to right, rgb(71, 77, 255) 0%, rgb(149, 255, 0) 100%);
+}
+
  /* modalDialog */
 
 .productInfo {
