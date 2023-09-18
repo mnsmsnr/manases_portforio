@@ -35,9 +35,11 @@ const Page = ({ offset, gradient, onClick, PJinfo }: PageProps) => (
           </Button>
         </div>
         <div>
-          <Button href={PJinfo.link} target="_blank">
-            <FaExternalLinkAlt className={styles.linkIcon}/>
-          </Button>
+          {PJinfo.link ? (
+            <Button href={PJinfo.link} target="_blank">
+              <FaExternalLinkAlt className={styles.linkIcon}/>
+            </Button>
+          ) : ''}
         </div>
       </div>
     </ParallaxLayer>
