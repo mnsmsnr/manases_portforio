@@ -56,11 +56,13 @@ export const Product = () => {
                 'モダン技術では避けて通れない英語ドキュメントの読解効率と、グローバル人材とのコミュニケーションという課題が根底にあります。',
         learn:'フロント（react）：ポートフォリオサイト制作の際のreact知見があったため、前回課題の煩雑なcss等の撲滅とディレクトリ設計に気を付けました。\n' +
                 'サーバー（python）：pythonは未経験でしたが一般的なCRUD処理は苦労せず。openAiとdeepleの外部API使用と、flackのログイン周り機能が未経験で少し時間がかかりました。 \n' +
-                'DB（postgreSQL）：複雑なDB設計を行うほど多機能でないので最低限の実装ですが、コンテナ構築時の自動初期構築の設定による保守性を意識しました。 \n' +
-                '上記3コンテナをdocker環境で作成しており、ECSにてAWSにデプロイ予定です。（※こちらは現在学習 & 作成中です）\n',  
+                'DB（postgreSQL）：複雑なDB設計を行うほど多機能でないので最低限の実装ですが、コンテナ構築時の自動初期構築の設定による保守性を意識しました。 \n',
         skills:['React.js','Material-UI','Python3','flack', 'postgreSQL','openAI API', 'DeepL API','AWS ecs'],
         github:'https://github.com/mnsmsnr/aice',
-        // link:'',
+        link:'https://aice-lb-296492510.ap-northeast-1.elb.amazonaws.com/',
+        account:'※デプロイ先リンクを追加していますが、試作品の仮公開のため色々と荒い部分がありますのでご容赦ください。 \n' +
+        ' ログイン用サンプルユーザ情報はログイン画面にあり動作確認いただけますが、チャットログはアカウントに残りますので情報の取り扱いにはご注意願います。 \n' +
+        ' サインアップには2FA認証等を導入していませんでのダミーアドレスで任意のユーザ作成等はご自由に操作ください。登録データは公開終了時にec2コンテナ自体削除いたします。 \n',
     }
     let PJs = {PJ1:railsTutorial, PJ2:theWorkout, PJ3:manasesPortfolio, PJ4:aice}
     return (
